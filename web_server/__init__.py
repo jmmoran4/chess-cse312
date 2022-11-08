@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 
+
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
 
@@ -23,7 +24,7 @@ def create_app(test_config=None):
 
         # a simple page that says hello
 
-         # blueprint for auth routes in our app
+        # blueprint for auth routes in our app
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint)
 
@@ -32,4 +33,3 @@ def create_app(test_config=None):
     app.register_blueprint(main_blueprint)
 
     return app
-
