@@ -60,3 +60,4 @@ def get_leaderboard():
         return_leaderboard[rank] = user
         rank += 1
     return return_leaderboard
+
